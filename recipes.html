@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="hy">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recipes | Eat Fresh</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@400;500;600;700&family=Noto+Serif+Armenian:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="recipes">
+<header id="site-header"></header>
+<main>
+<section class="page-hero"><div class="wrap"><h1 data-i18n="rec_title"></h1><p class="lead" data-i18n="rec_lead"></p></div></section><section id="recipes">
+  <div class="wrap">
+    <div class="filters" id="filters" role="group" aria-label="Filter recipes"></div>
+    <div class="rec-grid" id="recGrid"></div>
+  </div>
+</section><dialog id="dlg" aria-labelledby="dlgTitle">
+  <img id="dlgImg" class="dlg-img" alt="" width="900" height="600">
+  <div class="dlg-head">
+    <h3 id="dlgTitle"></h3>
+    <p id="dlgInfo"></p>
+    <button class="close" id="dlgClose" aria-label="Close">×</button>
+  </div>
+  <div class="dlg-body">
+    <div><h4 data-i18n="ingr">Բաղադրիչներ</h4><ul id="dlgIngr"></ul></div>
+    <div><h4 data-i18n="steps_h">Պատրաստում</h4><ol id="dlgSteps"></ol></div>
+  </div>
+</dialog>
+</main>
+<footer id="contact"><div id="site-footer"></div></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
